@@ -9,6 +9,6 @@ Työkalu OP:n E-laskujen lataukseen aikavälillä. Tämä pikaisesti nikkaroitu.
 3. Kirjaudu OP:n sivuille FF:llä joka aukesi.
 4. Kun olet OP:n pääsivulla, paina Lataa nappia. Kun ensimmäinen lataus dialogi aukeaa laita että haluat tallentaa ja että valinta muistetaan.
 
-Ohjelma lataa duplikaatteja ja toivottavasti kaikki E-laskut kannattaa ehkä tarkistaa mitä sait.
+Ohjelma lataa duplikaatteja ja toivottavasti kaikki E-laskut, kannattaa ehkä tarkistaa mitä sait.
 
 OH1TR
