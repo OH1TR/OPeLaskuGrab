@@ -31,8 +31,8 @@ namespace OPeLaskuGrab
                 driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(3);
 
 
-                DateTime day = new DateTime(2018, 1, 1); //Koodaa alku tähän
-                DateTime end = new DateTime(2018, 12, 31); // Koodaa loppu tähän
+                DateTime day = new DateTime(2021, 7, 1); //Koodaa alku tähän
+                DateTime end = new DateTime(2021, 12, 31); // Koodaa loppu tähän
 
                 for (; day < end; day = day.AddDays(1))
                 {
@@ -88,6 +88,19 @@ namespace OPeLaskuGrab
             e.Click();
             System.Console.WriteLine("Download2");
             driver.FindElement(By.ClassName("opux-action-link")).Click();
+
+            //Expander
+            var elems0 = driver.FindElements(By.TagName("a"));
+            foreach (var el in elems0)
+            {
+                if (el.Text == "Laskun tallennus omalle koneelle")
+                {
+                    System.Console.WriteLine("Download3");
+                    el.Click();
+                    break;
+                }
+            }
+            System.Threading.Thread.Sleep(500);
             var elems = driver.FindElements(By.ClassName("opux-action-link"));
             foreach (var el in elems)
             {
